@@ -1,11 +1,10 @@
 <?php
-// Función para cifrar un mensaje utilizando el cifrado de César con un desplazamiento fijo de 5
 function cifrarCesar($mensaje) {
     $resultado = '';
     $longitud = strlen($mensaje);
     for ($i = 0; $i < $longitud; $i++) {
         $caracter = $mensaje[$i];
-        // Verificamos si el caracter es una letra
+            // Revisamos  si el caracter es una letra
         if (ctype_alpha($caracter)) {
             // Obtenemos el código ASCII del caracter
             $codigoAscii = ord($caracter);
@@ -23,7 +22,7 @@ function cifrarCesar($mensaje) {
     return $resultado;
 }
 
-// Función para descifrar un mensaje utilizando el cifrado de César con un desplazamiento fijo de 5
+// funcion para descifrar
 function descifrarCesar($mensajeCifrado) {
     $resultado = '';
     $longitud = strlen($mensajeCifrado);
