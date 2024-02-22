@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado de Cesar</title>
+</head>
+<body>
+    <h1>Cifrado de Cesar</h1>
+
+    <!-- Parte de cifrado -->
+    <form action="/backend/save.php" method="post" autocomplete="off">
+        <label for="mensaje">Palabra:</label>
+        <input type="text" name="mensaje" id="mensaje">
+        <button type="submit" name="cifrar">Cifrar</button>
+    </form>
+    <br><br>
+
+    <!-- Parte de descifrado -->
+    <form action="/backend/save.php" method="post" autocomplete="off">
+        <label for="mensaje_cifrado">Palabra cifrada:</label>
+        <input type="text" name="mensaje_cifrado" id="mensaje_cifrado">
+        <button type="submit" name="descifrar">Descifrar</button>
+    </form>
+
+    <div id="resultado">
+        <!-- Aquí se mostrará el resultado del cifrado o descifrado -->
+    </div>
+
+    <script src="/js/index.js"></script> <!-- Incluye el archivo JavaScript para el cifrado/descifrado -->
+</body>
+</html>
